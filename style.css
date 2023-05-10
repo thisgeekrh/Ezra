@@ -3,24 +3,27 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #FFFFFF;
-    ;
+    background-image: url("CowPrint.png");
 }
 
 p {
-    color: #CB7F64;
+    color: #008080;
     margin: auto;
     width: 90%;
     padding: 10px;
+	text-shadow: 2px 2px #ffffff;
+
 }
 
 header {
 	background-color: white;
 	padding: 20px;
 	text-align: center;
+	text-shadow: 2px 2px #ffffff;
 }
 
 hr {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .center {
@@ -34,18 +37,23 @@ hr {
 main {
 	padding: 20px;
 	text-align: center;
+	color: #008080;
+	text-shadow: 1px 1px #ffffff;
+
 }
 
 h1 {
 	font-size: 2em;
 	margin-top: 0;
-    color: #C87F61;
+    color: #000000;
+	text-shadow: 1px 1px #ffffff;
 }
 
 h2 {
 	font-size: 1.5em;
 	margin-top: 40px;
-    color: #C87F61;
+    color: #000000;
+	text-shadow: 1px 1px #ffffff;
 }
 
 ul {
@@ -58,12 +66,9 @@ li {
 	margin-top: 10px;
 }
 
-main {
-    color: #E49E49;
-}
 .button {
 	display: inline-block;
-	background-color: #ff3366;
+	background-color: #6F8F84;
 	color: white;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -73,7 +78,7 @@ main {
 }
 
 .button:hover {
-	background-color: #ff6699;
+	background-color: #476c5f;
 	cursor: pointer;
 }
 
