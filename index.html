@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Behret's First Birthday Party!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ONEderful.png">
+        <style>
+          /* Define the confetti particles */
+          .confetti {
+            position: fixed;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: confetti-fall 3s ease-out forwards;
+          }
+      
+          /* Keyframe animation for confetti falling */
+          @keyframes confetti-fall {
+            0% {
+              transform: translate3d(0, 0, 0) rotateZ(0deg);
+            }
+            100% {
+              transform: translate3d(calc(100vw * var(--random-x)), 100vh, 0) rotateZ(calc(360deg * var(--random-rotate)));
+            }
+          }
+        </style>
+            
+</head>
+
+<body>
+
+    
+        <script>
+          // Continuously generate confetti particles
+          setInterval(() => {
+            const confetti = document.createElement("div");
+            confetti.classList.add("confetti");
+            confetti.style.setProperty("--random-x", Math.random());
+            confetti.style.setProperty("--random-rotate", Math.random());
+            confetti.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+            confetti.style.left = `${Math.random() * 100}%`;
+            document.body.appendChild(confetti);
+            setTimeout(() => {
+              confetti.remove();
+            }, 3000);
+          }, 100);
+        </script>
+            
+	<main>          
+        <img src="ONEderful.png" alt="Isn't She ONEderful Image" class="center shadow" width="450px">
+<br>
+		<h3>Join Us in Celebrating Our Little Princess's First Birthday! It's hard to believe it's already been a year since our baby girl arrived! Please join us for a fun-filled day of cake and lots of love.</h3>
+        
+        <img src="behret.png" alt="Baby Girl" class="center shadow" width="250px">
+<br>
+        <hr width="400px">
+        <br>
+        <h1>Amazon Wish List</h1>
+		<a href="https://www.amazon.com/registries/gl/guest-view/2PTD3Q0R14RRE" class="button">View Wish List</a>	
+        <br><br>
+        <hr width="400px">
+
+        <h1>Party Details</h1>
+        <br>
+		<ul>
+			<li><b>Saturday, April 8th</b></li>
+			<li><b>Time: </b>Drop In Anytime Between 10:00 AM - 2:00 PM</li>
+			<li><b>Location: </b>Click The RSVP Button Below To Text Tyler for Address/Directions</li>
+		</ul>
+        <br><br>
+        <hr width="400px">
+<br>
+        <h1>Don't Forget To RSVP or Get Directions</h1>
+
+        <a href="sms:(+1)(803-389-8809)" class="button">RSVP Now</a>	
+
+        <br><br>
+        <hr width="400px">
+        <br>
+    <h2>We Can't Wait To See You There!</h2>
+    <br><br>
+
+
+    </main>
+
+
+
+</body>
+</html>
